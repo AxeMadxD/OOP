@@ -14,7 +14,6 @@ public class Patient {
         return name;
     }
 
-    // Optional extra from task
     public void addHistoryRecord(Doctor doctor, String note) {
         history.add("Doctor: " + doctor.getName() + " | Note: " + note);
     }
