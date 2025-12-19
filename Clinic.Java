@@ -18,14 +18,12 @@ public class Clinic {
         return Collections.unmodifiableList(appointments);
     }
 
-    // Mandatory method from task
     public Appointment scheduleAppointment(Patient patient, Doctor doctor, String time) {
         Appointment appointment = new Appointment(patient, doctor, time);
         appointments.add(appointment);
         return appointment;
     }
 
-    // Optional extra from task
     public void complete(Appointment appointment) {
         if (appointment == null) {
             throw new IllegalArgumentException("Appointment cannot be null.");
